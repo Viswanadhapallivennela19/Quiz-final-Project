@@ -29,6 +29,7 @@ const registerForm = document.getElementById('registerForm');
       const confirmPassword = document.getElementById('confirmPassword').value;
       if(!signUpRegex.test(password)){
         alert("Don't match the Admin Pattern")
+        return;
       }
       if (password !== confirmPassword) {
         alert('Passwords do not match!');
