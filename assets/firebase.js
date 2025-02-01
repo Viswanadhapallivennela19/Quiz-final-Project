@@ -25,8 +25,11 @@ const registerForm = document.getElementById('registerForm');
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
+      const signUpRegex = /^[a-zA-Z]+\.admin\d$/;
       const confirmPassword = document.getElementById('confirmPassword').value;
-
+      if(!signUpRegex.test(password)){
+        alert("Don't match the Admin Pattern")
+      }
       if (password !== confirmPassword) {
         alert('Passwords do not match!');
         return;
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
           e.preventDefault();
           const email = document.getElementById('email').value;
           const password = document.getElementById('password').value;
-          const regex = /^[a-zA-Z]+\.admin\d$/;
+          const loginRegex = /^[a-zA-Z]+\.admin\d$/;
 
           console.log("Attempting login with email:", email);  
 
@@ -63,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
               console.log("Login successful! User email:", userEmail);  
 
-              if (regex.test(password)) {
+              if (loginRegex.test(password)) {
                   const userName = userEmail.split('@')[0];  
                   localStorage.setItem('userName', userName);  
 
