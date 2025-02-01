@@ -28,7 +28,7 @@ const registerForm = document.getElementById('registerForm');
       const signUpRegex = /^[a-zA-Z]+\.admin\d$/;
       const confirmPassword = document.getElementById('confirmPassword').value;
       if(!signUpRegex.test(password)){
-        alert("Don't match the Admin Pattern")
+        alert("Don't match the Admin Pattern like(Vennela.admin1)")
         return;
       }
       if (password !== confirmPassword) {
