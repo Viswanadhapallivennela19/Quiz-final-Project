@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/user.css">
+    <title>Chinni_Web_X Student Data Application</title>
+</head>
+<body>
+    
+    <form id="user-form">
+        <div class="heading">
+            <div class="space"></div>
+            <h1 class="name">Details Section</h1>
+            <div class="space"></div>
+        </div>
+        <div class="parent-form">
+            <div class="form-child">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="fullName" class="input-field" placeholder="Enter Your Full Name" required>
+            </div>
+            <div class="form-child">
+                <label for="college-name">Institute or College Name</label>
+                <input type="text" id="college-name" name="collegeName" class="input-field" placeholder="Enter Institute or College Name" required>
+            </div>
+            <div class="form-child">
+                <label for="reg-number">Registration Number</label>
+                <input type="text" id="reg-number" name="registrationNumber" class="input-field" placeholder="Enter Your College Reg No" required>
+            </div>
+            <div class="form-child">
+                <label for="branch">Branch</label>
+                <input type="text" id="branch" name="branch" class="input-field" placeholder="Enter Your Branch (Ex: ECE, CSE, BSC, BE, etc.)" required>
+            </div>
+            <div class="form-child">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-field" placeholder="Ex: john12@gmail.com" required>
+            </div>
+            <div class="form-child">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="input-field" placeholder="Ex: 1234567890" required>
+            </div>
+            <button type="submit" id="submit-btn">Submit</button>
+            
+        </div>
+        <marquee id="student-status" style="color:red;margin-top: 1rem;display:none;">Please Login</marquee>
+        
+    </form>
+
+    <script src="assets/user.js"></script>
+    <script src="assets/auth.js" type="module">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: crimson;
+    font-size:1.2rem;
+    font-weight: 500;
+}
+/***************** login and sign up section ***********************/
+.sign-up-section,.login-section,.poll-section{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(45deg ,orange,lightgray,#fe6a0a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.sign-up-form,.login-form,.poll-form{
+    /* filter: blur(8px); */
+    width: 30%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 3% 1%;
+    border-radius: .6rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.307);
+    
+}
+.sign-up-form label,.login-form label,.poll-form label{
+    margin:2% 0 ;
+    /* border: 2px solid red; */
+    display: block;
+}
+.sign-up-form input,.login-form input,.poll-form input{
+    padding:.5rem;
+    width: 80%;
+    /* border: 2px solid red; */
+    border-radius: .3rem;
+    border: 2px solid #ccc;
+}
+.sign-up-form h1,.login-form h1,.poll-form h1{
+    text-align: center;
+}
+.sign-up-form button,.login-form button,.poll-form button{
+    width: max-content;
+    padding: 2% 3.5% ;
+    margin:1rem auto;
+    border-radius: .2rem;
+    &:hover{
+        background-color: rgb(30, 215, 30);
+        border: 2px solid #ccc;
+        box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.093);
+    }
+
+}
+div .horizontal-line{
+    width: 6rem;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: orange;
+    height:.2rem;
+}
+div p{
+    font-weight: 700;
+    justify-content: center;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.google-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.111);
+    border-radius:.5rem;
+    padding: .5rem;
+    margin:1rem auto;
+}
+.google-login a{
+    color: black;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+.p-signup{
+    text-align: center;
+}
+
+/****************** poll section ****************/
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #343a40;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    color: #495057;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+#poll-options .mb-3 {
+    display: flex;
+    align-items: center;
+}
+
+#poll-options .remove-option {
+    margin-left: 10px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+@media screen and (max-width:800px ){
+    /***************** login and sign up section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px ){
+    /***************** login and sign up section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:500px ){
+    /***************** login and sign up section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 60%;
+    }
+}
+@media screen and (max-width:400px ){
+    /***************** login and sign up , Poll section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 70%;
+    }
+}
+@media screen and (max-width:300px ){
+    /***************** login and sign up section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 80%;
+    }
+}
+@media screen and (max-width:250px ){
+    /***************** login and sign up section ***********************/
+    .sign-up-form,.login-form,.poll-form{
+        width: 95%;
+    }
+}

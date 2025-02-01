@@ -1,0 +1,461 @@
+:root {
+    --primary-color: #1A213B; /* Dark Blue */
+    --secondary-color: #FF9600; /* Orange */
+    --tertiary-color: #D8D9DB; /* Light Gray */
+    --background: #ffffff; /* Soft Neutral */
+    --text-color: #1D1D1B; /* Deep Black */
+    --shadow-light: #ffffff; /* Light shadow */
+    --shadow-dark: rgba(0, 0, 0, 0.1); /* Dark shadow */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+a{
+    font-family: "Nunito", sans-serif;
+}
+h1,h2,h3,h4,.footer a{
+    font-family: "Merienda", cursive;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background: #e0e0e0;  
+    min-height: 100vh;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+.heading{
+    width: 100%;
+    margin:0 0 2rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0;
+    .space{
+        width: 5rem;
+        height: 2px;
+        background-color: red;
+        border-radius: 2rem;
+         
+        margin:0 1rem;
+    }
+     
+}
+/****************************** Header section ******************************/
+.header{
+    width: 100%;
+    background-color:lightgrey;
+    padding: 2%;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1000;
+}
+.header nav ul{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    
+    a{
+        padding:.8rem;
+        color: var(--text-color);
+        font-weight: bold;
+        &:hover{
+            background-color: var(--secondary-color);
+            border-radius:.5rem;
+        }
+    }
+}
+.header nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-link.active{
+    background-color: var(--secondary-color);
+}
+.brand-middle-text{
+    padding:.7rem;
+    border-radius: 24% 76% 73% 27% / 73% 72% 28% 27%;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.353);
+    animation:logo 10s alternate infinite
+}
+@keyframes logo{
+    25%{
+        background-color:var(--secondary-color);
+        border-radius: 46% 54% 80% 20% / 28% 31% 69% 72% ;
+    }
+    50%{
+        background-color:#fe6a0a;
+        border-radius: 58% 42% 37% 63% / 47% 10% 90% 53%;
+    }
+    75%{
+        background-color:var(--secondary-color);
+        border-radius: 58% 42% 37% 63% / 47% 10% 90% 53%;
+    }
+    100%{
+        border-radius: 42% 58% 40% 60% / 63% 71% 29% 37% ;
+        background-color:#e74504;
+    }
+}
+/****************************** Student Details section ******************************/
+form{
+    width:60%;
+    margin: auto;
+}
+.parent-form {
+    width:100%;
+    padding: 2rem;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    .form-child{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form-child label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+     
+}
+
+.form-child input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+    font-size: 1rem;
+    outline: none;
+    color: #555;
+}
+#submit-btn {
+    grid-column: span 2;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#submit-btn:hover {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    transform: translateY(-2px);
+}
+
+#submit-btn:active {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+    transform: translateY(2px);
+}
+.input-field:focus {
+    box-shadow: 0 0 0 2px #76c7c0, inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+/****************************** index.html header section ******************************/
+.main{
+    width: 100%;
+    margin-top:8rem;
+}
+.about{
+    width:80%;
+    margin:4rem auto;
+}
+.about-flex{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.child-2-p{
+    letter-spacing: .2rem;
+    
+}
+.child2-child{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    line-height:2.3rem;
+}
+.child2-child i{
+    margin-right: .3rem;
+    color: var(--secondary-color);
+     font-weight: 800;
+}
+.section-head{
+    width: max-content;
+}
+.section-head h2{
+    font-size: 2.3rem;
+}
+.section-head .dummy-heading{
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    margin-bottom: .2rem;
+}
+.section-head .dummy-heading h4{
+    color:grey;
+    margin:0 .5rem 0 0;
+    font-weight: 400;
+}
+.section-head .dummy-heading div{
+    width:6rem;
+    height: .1rem;
+    background-color: var(--secondary-color);
+}
+/*****************************Services section********************************/
+.services{
+    width: 80%;
+    margin:5rem auto;
+}
+.services-content{
+    margin:3rem auto;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.services-content .inner-division{
+    box-shadow: 2px 2px 5px 5px rgba(255, 166, 0, 0.137);
+    padding: 1rem;
+    height: auto;
+    border-radius: .7rem;
+    &&:hover{
+        background:linear-gradient(120deg,var(--secondary-color),var(--shadow-light));
+        box-shadow: 2px 2px 15px 5px rgba(255, 166, 0, 0.174);
+        
+    }
+}
+.inner-division h3{
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+.inner-division-child span{
+    display: inline-block;
+    margin-right: .5rem;
+    color: var(--secondary-color);
+}
+.services-content .inner-division .inner-division-child{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin-top: .5rem;
+}
+/****************************** Why need us section ******************************/
+.why-we-need-grid{
+    width: 100%;
+    padding: 3rem 1rem;
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+}
+.why-we-need .why-we-need-grid .child{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.152);
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    transition: all 0.3s ease;
+}
+.why-we-need .why-we-need-grid .child:hover{
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.147);
+    overflow:hidden;
+}
+.why-we-need .why-we-need-grid .child:nth-child(odd):hover {
+    transform: skew(3deg, 5deg); 
+}
+
+.why-we-need .why-we-need-grid .child:nth-child(even):hover {
+    transform: rotate(3deg); 
+}
+.why-we-need .why-we-need-grid .child i{
+    color:var(--secondary-color);
+    margin-bottom: .5rem;
+    padding:1rem;
+    font-size: 2.5rem;
+    background-color: rgba(255, 166, 0, 0.129);
+    border-radius: 50%;
+}
+.why-we-need .why-we-need-grid .child h4{
+    margin:1rem 0;
+    text-align: center !important;
+}
+.why-we-need .why-we-need-grid .child p{
+    margin-top: 1rem;
+    text-align: center !important;
+}
+.why-we-need .why-we-need-grid .child:hover i{
+    background-color: var(--secondary-color);
+        color: var(--primary-color);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.223);
+        
+}
+.brand-child{
+    background-color: var(--secondary-color);
+}
+/****************************** contact section ******************************/
+.contact{
+    width: 80%;
+     
+    margin: 6rem auto;
+    box-shadow: 2px 2px 5p 5px rgba(0, 0, 0, 0.356);
+}
+.contact .form-grid{
+    width: 80%;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.114);
+    /* border: 2px solid blue; */
+    margin:2rem auto;
+    padding:1rem;
+}
+.form-grid-child{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin:.6rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: .5rem;
+}
+.form-grid-child input::placeholder,textarea::placeholder{
+    color:var(--secondary-color)
+}
+.form-grid-child input,textarea{
+    width: 80%;
+    padding: .8rem;
+    border-radius: .3rem;
+    border:2px solid gray;
+}
+.form-grid-child textarea{
+    width: 100%;
+    padding: .8rem;
+    border-radius: .5rem;
+}
+.form-grid button{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+    border:none;
+    background-color: var(--secondary-color);
+    &&:hover{
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.123);
+    }
+}
+/****************************** Footer section ******************************/
+.footer{
+    background-color:var(--primary-color);
+     text-align: center;
+    padding: 1rem;
+}
+.footer p,.footer a{
+    color:var(--background)
+}
+.footer a{
+    display: inline-block;
+    margin-top: .3rem;
+}
+.footer:hover p a{
+    color:var(--secondary-color);
+    font-weight: 800;
+    letter-spacing: .4rem;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/****************************** MediaQuery section ******************************/
+@media screen and (max-width:1300px) {
+    .about-flex{
+        flex-direction: column;
+    }
+    .about-flex .child-1{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-flex img{
+        width: 80%;
+    }
+    .why-we-need-grid{
+         width: 100%;
+        grid-template-columns:1fr 1fr;
+    }
+    .services-content{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .header nav{
+        flex-direction: column;
+        justify-content:space-between;
+        align-content: center;
+    }
+    .header nav ul{
+          margin-top: 1rem;
+    }
+    .parent-form {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    #submit-btn {
+        grid-column: 1;
+    }
+    .contact .form-grid{
+        width: 100%;
+        
+    }
+    .form-grid-child{
+        width: 100%;
+        
+         
+    }
+    .form-grid-child input,textarea{
+        width: 100%;
+    }
+    form{
+        width: 95%;
+        
+    }
+}
+@media screen and (max-width:650px) {
+    .why-we-need-grid{
+       grid-template-columns:1fr;
+   }
+   h2{
+    font-size: 1.5rem !important;
+   }
+   .contact,.services{
+    width: 100%;
+   }
+}

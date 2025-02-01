@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/V-removebg-preview.png">
+    <title>Chinni_Web_X Quiz Application</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e0e0e0;
+    color: #333;
+}
+
+h1, p {
+    margin: 10px 0;
+}
+
+/* Neumorphism Styles */
+.neumorphic-header {
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.neumorphic-timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+
+.neumorphic-container {
+    min-height: 100vh;
+    width:100%;
+    margin:5.5rem auto 0;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    padding:3%;
+}
+
+.neumorphic-quiz {
+    margin-bottom: 20px;
+}
+
+.neumorphic-button {
+    display: block;
+    width: 20%;
+    padding:1rem 1.5rem;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.neumorphic-button:hover {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+    color:#FF9600;
+}
+
+.neumorphic-result {
+    width:50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding:1rem;
+    background: #e0e0e0;
+    border-radius: 12px;
+    /* box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff; */
+    margin:1.5rem auto 0;
+}
+
+/* Neumorphic Question Style */
+.question {
+    width: 60%;
+    margin: 0 auto 1.7rem;
+    padding:1.5rem;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+
+.question p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+     
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #2575fc;
+}
+.user-name{
+    font-size:1.5rem;
+}
+.user-header{
+    display: flex;
+    width: 100%;
+    padding: 2%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+ 
+input[type="radio"] {
+    transform: scale(1.5);  /* Increase the radio button size by 1.5 times */
+    margin-right: 10px;      /* Add space between the radio button and label */
+    accent-color: #2575fc;   /* Change the accent color */
+}
+
+.correct {
+    background-color: #d4edda; /* Light green */
+    border: 1px solid #28a745; /* Green border */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.incorrect {
+    background-color: #f8d7da; /* Light red */
+    border: 1px solid #dc3545; /* Red border */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 200px) {
+    .question {
+    width:90%;
+    margin: 0 auto 1.7rem;
+    padding:1.5rem;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+}
+    .neumorphic-button{
+        width: max-content;
+    }
+}
+
+
+    </style>
+
+</head>
+<body>
+    <header class="user-header neumorphic-header" id="user-header">
+        <div class="message-container">
+            <h3>🌟 All The Best, <span class="user-name" id="user-name">User</span>!</h3>
+            <p>Push your limits and achieve greatness!</p>
+        </div>
+        
+        <div id="timer" class="neumorphic-timer">Time left: 60:00</div>
+    </header>
+    <main class="container neumorphic-container">
+        <div id="quiz" class="neumorphic-quiz"></div>
+        <button id="submitBtn" class="neumorphic-button">Submit Quiz</button>
+        <div id="result" class="neumorphic-result"></div>
+    </main>
+    <script src="assets/user.js"></script>
+</body>
+</html>

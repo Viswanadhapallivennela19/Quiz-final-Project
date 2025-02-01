@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/auth.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chinni_Web_x User Login</title>
+</head>
+<body>
+     
+    <!-- Login Section -->
+    <section class="login-section hidden">
+        <form class="login-form">
+            <h1>User Login</h1>
+            <label for="email">Email</label>
+            <input type="email" name="email" required id="email" autocomplete="new-password" placeholder="Enter Your Email(example@gmail.com)">
+            <label for="password">Password</label>
+            <input type="password" name="password" required id="password" autocomplete="new-password" placeholder="Enter your password">
+            <button type="submit" id="loginButton">Login</button>
+            <p class="p-signup">Don't have an account?<a href="user-signup.html" id="signupButton">Sign Up</a> </p>
+        </form>
+        <div>
+            <p><span class="horizontal-line"></span> OR <span class="horizontal-line"></span></p>
+            <div class="google-login">
+                 <img src="assets/google.png" alt="google image" width="50px">
+                <a href="#" id="google-signup">Login With Google</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="assets/auth.js" type="module"></script>
+</body>
+</html>

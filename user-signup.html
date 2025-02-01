@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/auth.css">
+    <title>Firebase Authentication</title>
+</head>
+<body>
+    <!-- Sign-Up Section -->
+    <section class="sign-up-section">
+        <form class="sign-up-form" id="sign-up-form">
+            <h1>Sign Up</h1>
+            <label for="username">User Name</label>
+            <input type="text" name="username" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" required id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" required id="password" autocomplete="new-password">
+            <label for="con-password">Confirm Password</label>
+            <input type="password" name="con-password" required id="con-password" autocomplete="new-password">
+            <button type="submit" id="signupButton">Sign Up</button>
+            <p class="p-signup">Already have an account? <a href="user-login.html">Login</a></p>
+        </form>
+        
+    </section>
+
+     
+
+    <script src="assets/auth.js" type="module"></script>
+</body>
+</html>
