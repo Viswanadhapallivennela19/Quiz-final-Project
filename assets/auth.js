@@ -5,7 +5,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 // Firebase Configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBbTLrujtzrTZ-FvqxDa5t-5Dce2Vcy8nw",
-  authDomain: "quiz-user-login.firebaseapp.com",
+  authDomain: "viswanadhapallivennela19.github.io",
   projectId: "quiz-user-login",
   storageBucket: "quiz-user-login.appspot.com",
   messagingSenderId: "708666745396",
